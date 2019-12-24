@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { TreniComponent } from './treni/treni.component';
 import { MmssPipe } from './mmss.pipe';
 import { NotizieComponent } from './notizie/notizie.component';
+import { MetroComponent } from './metro/metro.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NotizieComponent } from './notizie/notizie.component';
     MenuComponent,
     TreniComponent,
     MmssPipe,
-    NotizieComponent
+    NotizieComponent,
+    MetroComponent
   ],
   imports: [
     BrowserModule,

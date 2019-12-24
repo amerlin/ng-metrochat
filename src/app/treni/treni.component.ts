@@ -1,4 +1,6 @@
+import {Metro} from './../model/metro.model'
 import { Component, OnInit } from '@angular/core';
+import { LISTAMETRO} from './../dati/metro_remoti';
 
 @Component({
   selector: 'app-treni',
@@ -7,17 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TreniComponent implements OnInit {
 
-  listametro = [];
+  listametro : Metro[];
 
   constructor() {
-    this.listametro = [
-      { idt: 'ASD', linea: 'Rossa', numchatting: 32, tempo: 125000 },
-      { idt: 'AKE', linea: 'Gialla', numchatting: 29, tempo: 145000 },
-      { idt: 'BFD', linea: 'Verde', numchatting: 47, tempo: 155000 }
-    ];
+    this.listametro = [];
   }
 
+  //eseguito una sola volta, dopo il costruttore
   ngOnInit() {
+    this.listametro = LISTAMETRO;
   }
 
 }
