@@ -10,6 +10,8 @@ export class MetroComponent implements OnInit {
 
   //dati che mi arrivano dal parent
   @Input() datiIn: Metro;
+  @Input() oraAttuale: number;
+  trenoSelezionato:Metro;
 
   constructor() { }
 

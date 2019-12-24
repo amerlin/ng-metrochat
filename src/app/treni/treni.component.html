@@ -1,3 +1,5 @@
 <div class="listatreni">
-    <app-metro *ngFor="let metro of listametro" [datiIn]="metro"></app-metro>
+    <app-metro *ngFor="let metro of listametro" [datiIn]="metro" [oraAttuale]="now" (click)="setMetro(metro)"></app-metro>
 </div>
+<!-- aggiunto qui il template dei selezionati -->
+<app-dettaglio [treno]="trenoSelezionato"></app-dettaglio>
