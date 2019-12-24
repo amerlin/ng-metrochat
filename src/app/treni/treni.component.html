@@ -1,10 +1,3 @@
 <div class="listatreni">
-    <ul>
-        <li *ngFor="let metro of listametro">
-            <h2>{{metro.linea}}</h2>
-            <p>Id: {{metro.idt}}</p>
-            <p>Attesa senza pipe: {{metro.tempo}}</p>
-            <p>Attesa con pipe: {{metro.tempo | mmss}}</p>
-        </li>
-    </ul>
+    <app-metro *ngFor="let metro of listametro" [datiIn]="metro"></app-metro>
 </div>
