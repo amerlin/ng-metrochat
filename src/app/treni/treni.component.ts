@@ -12,6 +12,7 @@ export class TreniComponent implements OnInit {
   listametro: Metro[];
   now: number;
   trenoSelezionato: Metro;
+  currentInPartenza:string;
 
   constructor() {
     this.listametro = [];
@@ -28,5 +29,8 @@ export class TreniComponent implements OnInit {
     this.trenoSelezionato = metro;
   }
 
-
+  partiti(id:string){
+    this.currentInPartenza = id;
+  }
+  
 }

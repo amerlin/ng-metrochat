@@ -1,5 +1,7 @@
 <div class="listatreni">
-    <app-metro *ngFor="let metro of listametro" [datiIn]="metro" [oraAttuale]="now" (click)="setMetro(metro)"></app-metro>
+    <app-metro *ngFor="let metro of listametro" [datiIn]="metro" [oraAttuale]="now" (click)="setMetro(metro)" (inPartenza)="partiti($event)"></app-metro>
 </div>
 <!-- aggiunto qui il template dei selezionati -->
 <app-dettaglio [treno]="trenoSelezionato"></app-dettaglio>
+
+<p>Partenza: {{currentInPartenza}}</p>
