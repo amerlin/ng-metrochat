@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: '', component: TreniComponent },
   { path: 'preferiti', component: PreferitiComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'dettaglio/:id', component: DetailComponent }
+  { path: 'dettaglio', component: LoginComponent },       //valore di default 
+  { path: 'dettaglio/:id', component: DetailComponent }   //valore con il dettaglio
 ];
 
 @NgModule({
