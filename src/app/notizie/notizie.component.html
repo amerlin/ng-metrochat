@@ -1,7 +1,7 @@
 <div class="news">
     <ul>
-        <li *ngFor="let notizia of listanews">
-            <h2>{{notizia.titolo}}</h2>
+        <li *ngFor="let notizia of listanews" (click)="dettaglio(notizia.id)">
+            <h2>{{notizia.titolo}} - Cliccabile</h2>
             <p>{{notizia.desc}}</p>
         </li>
     </ul>
