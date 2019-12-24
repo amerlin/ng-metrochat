@@ -10,6 +10,7 @@ import { MetroComponent } from './metro/metro.component';
 import { DettaglioComponent } from './treni/dettaglio/dettaglio.component';
 import { PreferitiComponent } from './preferiti/preferiti.component';
 import { LoginComponent } from './login/login.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { LoginComponent } from './login/login.component';
     MetroComponent,
     DettaglioComponent,
     PreferitiComponent,
-    LoginComponent
+    LoginComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

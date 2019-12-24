@@ -1,8 +1,6 @@
 <!-- Application Menu  -->
 <nav>
-    <ul>
-        <li><a href="">{{link_menu_1}}</a></li>
-        <li><a href="/preferiti">{{link_menu_2}}</a></li>
-        <li><a href="/login">{{link_menu_3}}</a></li>
-    </ul>
+    <li><a [routerLink]="['']">{{link_menu_1}}</a></li>
+    <li><a [routerLink]="['/preferiti']">{{link_menu_2}}</a></li>
+    <li><a [routerLink]="['/login']">{{link_menu_3}}</a></li>
 </nav>
